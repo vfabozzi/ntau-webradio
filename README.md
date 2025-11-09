@@ -1,10 +1,8 @@
-# ntau-webradio
-NTA U - Webradio ufficiale
+# NTA U - Webradio
 
-## Descrizione
 Piattaforma di streaming audio dell'accademia di belle arti di urbino.
 
-## Come Avviare Localmente
+### Avviare Localmente
 ```bash
 npm install
 npm start
