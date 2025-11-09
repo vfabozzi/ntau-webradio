@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titolo": "EP 1: L'INIZIO DELLA FINE",
+    "descrizione": "sa sa prova",
+    "data": "2025-11-10",
+    "autore": "nta u",
+    "durataMinuti": 45,
+    "file": "ep-1.mp3"
+  },
+  {
+    "id": 2,
+    "titolo": "EP 2: I FURETTI SONO DIO",
+    "descrizione": "i furetti sono dio",
+    "data": "2025-12-10",
+    "autore": "nta u",
+    "durataMinuti": 52,
+    "file": "ep-2.mp3"
+  }
+]

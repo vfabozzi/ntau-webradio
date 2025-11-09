@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin: 0 auto;
+    padding: 0 0.3rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(1px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    text-align: start;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.1rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+#episodi-container {
+    padding-top: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: gray 1.6px solid;
+}
+
+.episodio {
+    border: none;
+    background: none;
+    padding: 0;
+    align-items: center;
+}
+
+.episodio:last-child {
+    border-bottom: none;
+}
+
+.episodio-row {
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr;
+    padding: 0.3rem 0;
+    gap: 1rem;
+}
+
+.episodio-meta {
+    line-height: normal;
+}
+
+.icon {
+    font-size: 1rem;
+    left: 0.3rem;
+    position: absolute;
+    height: auto;
+    width: auto;
+    margin-top: 0.1rem;
+    ;
+}
+
+.play-button {
+    min-width: auto;
+    padding-left: 1.3rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s ease;
+    text-align: left;
+    font-family: inherit;
+    text-decoration: underline;
+    font-weight: normal;
+    color: blue;
+}
+
+/**.play-button:hover {
+    color: blue;
+}**/
+
+
+.audio-player {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.progress-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.85rem;
+    max-width: 10vw;
+
+}
+
+.progress-bar {
+    flex: 1;
+    height: auto;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+
+.progress-bar::-webkit-progress-value {
+    background: none;
+    border-radius: 0px;
+    background-color: blue;
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color: blue;
+    border-radius: 0px;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .episodio {
+        padding: 0rem;
+    }
+
+    .episodio-meta {
+        font-size: 0.9rem;
+        line-height: normal;
+    }
+
+    .play-button {
+        font-size: 1rem;
+    }
+}
